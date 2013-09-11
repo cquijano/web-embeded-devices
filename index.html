@@ -24,23 +24,32 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper hidden-xs" >
       <div class="container">
-
         <div class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <img src="images/logo.svg" height="50" style="padding:5px;">
+              <img src="images/logo.svg" style="margin:5px;height:40px">
             </div>
               <ul class="nav navbar-nav pull-right">
-                <li><a height="50" href="auth" style="color:white;font-size: 20px;">Internet</a></li>
+                <li>
+                <button type="button" onclick="location.href='auth';" class="btn btn-default navbar-btn">Internet</button>
+                </li>
               </ul>
           </div>
         </div>
 
       </div>
     </div>
-
+<!-- NAVBAR MoBILE-->
+     <div class="navbar-wrapper visible-xs" >
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="navbar-header">
+              <img src="images/logo.svg" style="margin:5px;height:40px">
+              <button type="button" onclick="location.href='auth';" class="btn btn-default navbar-btn" style="float:right;margin-right:5px">Internet</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Carousel
     ================================================== -->
